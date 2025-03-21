@@ -1,0 +1,134 @@
+/* General container: centering content with dark background */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212; /* Darker background for better contrast */
+  color: #e0e0e0;
+}
+
+/* Card container styling */
+.card {
+  background: #1e1e1e; /* Darker card background */
+  padding: 32px 28px; /* More padding for better spacing */
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+  width: 380px;
+  border: 1px solid #333; /* Subtle border */
+  text-align: center;
+}
+
+/* Heading styling */
+.card h2 {
+  margin-bottom: 28px;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #ffffff; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  padding: 10px 16px; 
+  border-radius: 6px; 
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5); 
+}
+
+.input:focus {
+  border-color: #4181f0; 
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.error {
+  color: #f87171; 
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 8px 12px;
+  background-color: rgba(248, 113, 113, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid #f87171;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  border: none;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #4181f0;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.login-button:active {
+  background-color: #1d4ed8;
+  transform: translateY(1px);
+}
+
+/* Sign Up Button */
+.signup-button {
+  background-color: #10b981;
+}
+
+.signup-button:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.signup-button:active {
+  background-color: #047857;
+  transform: translateY(1px);
+}
+
+/* Disabled button state */
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Small link for 'Sign Up' */
+.card p {
+  margin-top: 24px;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  background: none;
+  border: none;
+  color: #4181f0;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.toggle-button:hover {
+  color: #2563eb;
+}

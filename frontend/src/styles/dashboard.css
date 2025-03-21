@@ -1,0 +1,215 @@
+/* Dashboard.css */
+
+/* Overall page container with dark background */
+.dashboard-container {
+    min-height: 100vh;
+    background: #1e1e1e; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling: dark gradient background */
+  .dashboard-header {
+    background: linear-gradient(135deg, #374151, #4b5563); /* Subtle gradient from dark gray to lighter gray */
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header text styling */
+  .dashboard-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* User Info Card Styling */
+  .dashboard-userinfo {
+    background: #2d2d2d; /* Darker card background */
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444; /* Dark border */
+  }
+  
+  /* User info text and buttons */
+  .dashboard-userinfo p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #bbb; /* Lighter gray text */
+  }
+  
+  /* Button styling with hover effects */
+  .dashboard-buttons button {
+    margin-right: 1rem;
+    padding: 10px 18px;
+    background: #3b82f6; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-buttons button:hover {
+    background: #2563eb; /* Darker blue on hover */
+  }
+  
+  .dashboard-buttons button:active {
+    background: #1d4ed8; /* Even darker blue on click */
+  }
+  
+  /* Table container styling */
+  .dashboard-table-container {
+    background: #2d2d2d; /* Dark card background */
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444; /* Dark border */
+    margin-top: 2rem;
+  }
+  
+  /* Table styling with dark theme */
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 12px;
+    border: 1px solid #444; /* Dark borders */
+    text-align: left;
+  }
+  
+  .dashboard-table th {
+    background-color: #333; /* Darker background for headers */
+    color: #fff; /* White text */
+  }
+  
+  .dashboard-table tbody tr:hover {
+    background-color: #444; /* Hover effect with darker shade */
+  }
+  
+  .dashboard-table tbody tr {
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Error and info messages */
+  .dashboard-error {
+    color: #f87171; /* Red color for errors */
+    margin-top: 1rem;
+  }
+  
+  .dashboard-info {
+    color: #d1d5db; /* Lighter gray for info text */
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  
+  /* Connection Status Styles */
+  .connection-status {
+    margin-bottom: 1rem;
+  }
+  
+  .status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888; /* Default color */
+  }
+  
+  .status-indicator.connected .status-dot {
+    background-color: #4caf50; /* Green for connected */
+  }
+  
+  .status-indicator.disconnected .status-dot {
+    background-color: #f44336; /* Red for disconnected */
+  }
+  
+  .status-text {
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  
+  .connect-button {
+    background-color: #3b82f6; /* Blue color */
+  }
+  
+  .connect-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .fetch-button {
+    background-color: #10b981; /* Green color */
+  }
+  
+  .fetch-button:hover {
+    background-color: #059669; /* Darker green on hover */
+  }
+  
+  /* Filter Controls */
+  .dashboard-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .filter-group label {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .filter-group input,
+  .filter-group select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    min-width: 200px;
+  }
+  
+  .reset-button {
+    align-self: flex-end;
+    margin-top: auto;
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reset-button:hover {
+    background-color: #666;
+  }
+  
+  .file-count {
+    margin-bottom: 10px;
+    color: #aaa;
+    font-style: italic;
+  }
